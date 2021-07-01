@@ -1,5 +1,5 @@
 {
-  "name": "build-plugin-variable",
+  "name": "build-plugin-load_scss_variable",
   "version": "0.1.0",
   "description": "ice.js 用于加载scss全局变量的webpack插件",
   "main": "lib/index.js",
@@ -30,7 +30,7 @@
     "collectCoverage": true,
     "preset": "ts-jest"
   },
+  "private": false,
   "dependencies": {},
-  "private": true,
   "originTemplate": "build-plugin-template"
 }
