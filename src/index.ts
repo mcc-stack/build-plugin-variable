@@ -7,7 +7,7 @@ const plugin: IPlugin = ({ onGetWebpackConfig }) => {
       .use('sass-resources-loader')
       .loader(require.resolve('sass-resources-loader'))
       .options({
-        resources: process.cwd() + '/src/_variable.scss'
+        resources: process.cwd() + '/src/style/index.scss'
       });
   }
   onGetWebpackConfig(config => {

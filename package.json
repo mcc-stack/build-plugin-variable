@@ -1,6 +1,6 @@
 {
-  "name": "build-plugin-load_scss_variable",
-  "version": "0.1.0",
+  "name": "build-plugin-autoimport_scss_variable",
+  "version": "1.0.6",
   "description": "ice.js 用于加载scss全局变量的webpack插件",
   "main": "lib/index.js",
   "scripts": {
@@ -20,7 +20,6 @@
     "fs-extra": "^9.0.0",
     "got": "^11.0.2",
     "jest": "^25.4.0",
-    "sass-resources-loader": "^2.2.3",
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3",
     "webpack-chain": "^6.4.0"
@@ -31,6 +30,8 @@
     "preset": "ts-jest"
   },
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "sass-resources-loader": "^2.2.3"
+  },
   "originTemplate": "build-plugin-template"
 }
