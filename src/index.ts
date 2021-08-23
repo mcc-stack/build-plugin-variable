@@ -1,15 +1,18 @@
 import { IPlugin } from '@alib/build-scripts';
 import Config from 'webpack-chain';
 
+const SCSS_VARIABLE_PATH = process.cwd() + '/src/style/index.scss';
+
+function addSassResourcesLoader(configRule: Config.Rule) {
+  configRule
+    .use('sass-resources-loader')
+    .loader(require.resolve('sass-resources-loader'))
+    .options({
+      resources: SCSS_VARIABLE_PATH
+    });
+}
+
 const plugin: IPlugin = ({ onGetWebpackConfig }) => {
-  function addSassResourcesLoader(configRule: Config.Rule) {
-    configRule
-      .use('sass-resources-loader')
-      .loader(require.resolve('sass-resources-loader'))
-      .options({
-        resources: process.cwd() + '/src/style/index.scss'
-      });
-  }
   onGetWebpackConfig(config => {
     const sassRegex = /\.(scss|sass)$/;
     const sassModuleRegex = /\.module\.(scss|sass)$/;
