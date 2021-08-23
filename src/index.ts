@@ -1,7 +1,7 @@
 import { IPlugin } from '@alib/build-scripts';
 import Config from 'webpack-chain';
 
-const SCSS_VARIABLE_PATH = process.cwd() + '/src/style/index.scss';
+const SCSS_VARIABLE_PATH = process.cwd() + '/src/style/_variable.scss';
 
 function addSassResourcesLoader(configRule: Config.Rule) {
   configRule
