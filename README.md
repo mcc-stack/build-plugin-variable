@@ -1,3 +1,3 @@
 # README
 
-ice.js 用于加载公共scss 的 webpack 插件
+ice.js 用于加载全局 scss 变量 的 webpack 插件
