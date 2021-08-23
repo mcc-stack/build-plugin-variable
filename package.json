@@ -1,6 +1,6 @@
 {
   "name": "build-plugin-autoimport_scss_variable",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ice.js 用于加载scss全局变量的webpack插件",
   "main": "lib/index.js",
   "scripts": {
